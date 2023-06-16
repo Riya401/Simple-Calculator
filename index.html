@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="utils.css" type="text/css">
+
+</head>
+<body>
+
+    <div class="box" id="calc">
+        <div class="cal-header">
+            <h1 class=""> Calculator </h1>
+            <!-- Input for numbers-->
+            <input type="text" placeholder="0" id="result"/>
+        </div>
+
+        <div class="cal-body">
+            <div class="row">
+                <button class="btn" value="7" onclick="display('7')"> <b>7</b> </button>
+                <button class="btn" value="8" onclick="display('8')"> <b>8</b> </button>
+                <button class="btn" value="9" onclick="display('9')"> <b>9</b> </button>
+                <button class="btn" value="*" onclick="display('*')"> <b>*</b> </button>
+            </div>
+
+            <div class="row">
+                <button class="btn" onkeydown='func(event)' value="4" onclick="display('4')"> <b>4</b> </button>
+                <button class="btn" onkeydown='func(event)' value="5" onclick="display('5')"> <b>5</b> </button>
+                <button class="btn" onkeydown='func(event)' value="6" onclick="display('6')"> <b>6</b> </button>
+                <button class="btn" onkeydown='func(event)' value="-" onclick="display('-')"> <b>-</b> </button>
+            </div>
+
+            <div class="row">
+                <button class="btn"onkeydown='func(event)' value="1" onclick="display('1')"> <b>1</b> </button>
+                <button class="btn"onkeydown='func(event)' value="2" onclick="display('2')"> <b>2</b> </button>
+                <button class="btn"onkeydown='func(event)' value="3" onclick="display('3')"> <b>3</b> </button>
+                <button class="btn"onkeydown='func(event)' value="+" onclick="display('+')"> <b>+</b> </button>
+            </div>
+
+            <div class="row">
+                <button class="btn"onkeydown='func(event)' value="%" onclick="display('%')"> <b>%</b> </button>
+                <button class="btn"onkeydown='func(event)' value="0" onclick="display('0')"> <b>0</b> </button>
+                <button class="btn"onkeydown='func(event)' value="." onclick="display('.')"> <b>.</b> </button>
+                <button class="btn"onkeydown='func(event)' value="/" onclick="display('/')"> <b>/</b> </button>
+            </div>
+
+            <div class="row">
+                <button class="btn-c"onkeydown='func(event)' value="C" onclick="clr()"><b>C</b>  </button>
+                <button class="btn"onkeydown='func(event)' value="00" onclick="display('00')"> <b>00</b> </button>
+                <button class="btn"onkeydown='func(event)' value="=" onclick="calculate()"> <b>=</b> </button>
+            </div>
+
+        </div>
+
+
+        <div class="footer"></div>
+    </div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+        integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+        integrity="sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script  type= "text/javascript" src="index.js"></script>
+</body>
+</html>
